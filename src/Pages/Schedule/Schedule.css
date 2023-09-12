@@ -1,0 +1,45 @@
+.scheduleContainer {
+    background-color: #1e293b;
+}
+
+.schedules {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+}
+
+.euideiDes {
+    flex: 2;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.calendar {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+}
+
+.timeSlots {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeSlot {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(96 165 250);
+}

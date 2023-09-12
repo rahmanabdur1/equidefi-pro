@@ -1,0 +1,69 @@
+.bg{
+    background-color:#1e293b;
+    padding: 90px;
+    height: 80vh;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.bgInfo{
+    flex: 1;
+    color: white;
+}
+.bgImg{
+    flex: 1;
+}
+.bgImg img{
+ width: 80%;
+}
+
+.schedule {
+    position: relative;
+    top: 28px;
+    padding: 14px 40px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 6px;
+    background: linear-gradient(to right, rgb(252, 211, 77), rgb(244, 114, 182));
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.schedule:hover {
+    box-shadow: 0 0  9px rgba(242, 112, 110, 1); 
+}
+
+
+  .bgInfo a{
+    text-decoration: none;
+  }
+
+
+.fixed-button1 {
+    position: fixed;
+    left: 0;
+    bottom: 220px;
+    z-index: 999; 
+    padding: 10px 20px;
+    background-color: rgb(252, 211, 77);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fixed-button2 {
+    position: fixed;
+    right: 0;
+    bottom: 220px;
+    z-index: 999; 
+    padding: 10px 20px;
+    background-color: rgb(244, 114, 182);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
