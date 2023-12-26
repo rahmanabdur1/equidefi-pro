@@ -1,0 +1,39 @@
+.schedule-demo {
+  margin-top: 20px;
+  background: linear-gradient(to right,rgb(250, 160, 80), rgb(255, 134, 219));
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 50%;
+
+  z-index: -999;
+  transform: scale(1.2);
+  bottom: -80px;
+}
+
+.demo {
+  background-color: black;
+  padding: 35px;
+  margin: auto;
+  border-radius: 15px;
+  max-width: 600px;
+  color: white;
+  top: -30px;
+ position: relative;
+  font-family: sans-serif;
+}
+
+
+.demos {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media screen and (max-width: 720px) {
+  .schedule-demo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

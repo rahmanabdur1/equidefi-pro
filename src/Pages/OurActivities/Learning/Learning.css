@@ -1,0 +1,62 @@
+.learning {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+  }
+  .learning-des {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .learning-des h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+  }
+  
+  .learning-des p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    word-spacing: 2px;
+    line-height: 23px;
+    color: #dcdcdc;;
+  }
+
+  .learning-img {
+    flex: 1;
+  
+  }
+  
+  .learning-img img {
+    max-width: 100%;
+    width: 450px;
+  }
+  
+  .learning-btn{
+    padding: 12px 20px 12px 20px;
+    text-align: center;
+    color: white;
+    width: max-content;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(255, 179, 84),rgb(255, 134, 219));
+    text-decoration: none;
+  }
+  
+  
+@media screen and (max-width: 660px) {
+  .learning{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .learning-btn {
+    width: 100%;
+  }
+}

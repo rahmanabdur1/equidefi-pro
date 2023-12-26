@@ -1,0 +1,38 @@
+.containers {
+  padding: 100px;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+ 
+}
+
+.grid img {
+  width: 100%;
+  height: 55px;
+  object-fit: contain;
+}
+
+
+.partnership-info {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .containers {
+    padding: 80px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}

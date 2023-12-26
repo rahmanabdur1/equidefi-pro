@@ -1,0 +1,60 @@
+.investor {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+.investor-des {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.investor-des h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.investor-des p {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  word-spacing: 2px;
+  line-height: 23px;
+  color:#dcdcdc;
+}
+
+.investor-img {
+  flex: 1;
+}
+
+.investor-img img {
+  max-width: 100%;
+  width: 450px;
+}
+
+.raise-capital {
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  color: white;
+  width: max-content;
+  font-size: 15px;
+  font-weight: 550;
+  font-family: sans-serif;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgb(255, 179, 84), rgb(255, 134, 219));
+  text-decoration: none;
+}
+
+@media screen and (max-width: 660px) {
+  .investor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .raise-capital {
+    width: 100%;
+  }
+}

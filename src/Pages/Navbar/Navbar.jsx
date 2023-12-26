@@ -1,20 +1,68 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.svg'
-import './Navbar.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../assets/logo.svg";
+import "./Navbar.css";
+
 const Navbar = () => {
-    return (
-        <nav className='navbar'>
-            <img width={'200px'} src={logo} alt="" />
-            <div>
-                <Link to="/">LEARN</Link>
-                <Link to="/orders">INVEST</Link>
-                <Link to="/inventory">RAISE CAPITAL</Link>
-                <Link to="/about">MARKETPLACE</Link>
-                <Link className='scheduleLink' to='/schedule'>Schedule A Demo</Link>
-            </div>
-        </nav>
-    );
+  const [showMenu, setShowMenu] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollUpCount, setScrollUpCount] = useState(0);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrolled = (scrollY / (documentHeight - windowHeight)) * 100;
+
+    if (scrollY > scrollProgress) {
+      setScrolling(false);
+    } else {
+      setScrolling(true);
+      setScrollUpCount(scrollUpCount + 1);
+    }
+
+    setScrollProgress(scrollY);
+    setScrollProgress(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollUpCount]);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <nav className={`navbar ${scrolling ? "scrolling" : ""}`}>
+      <img width={"150px"} src={logo} alt="" />
+      <div className={`micca-links ${showMenu ? "active" : ""}`}>
+        <Link to="/">LEARN</Link>
+        <Link to="/invest">INVEST</Link>
+        <Link to="/raisecapital">RAISE CAPITAL</Link>
+        <Link to="/marketplace">MARKETPLACE</Link>
+        <Link className="scheduleLink" to="/schedules">Schedule A Demo</Link>
+      </div>
+
+      <div className="mobile-toggle" onClick={toggleMenu}>
+        <div className="micca">
+          <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
+        </div>
+      </div>
+      <div className="bg-progress">
+        <div
+          className="progressBar"
+          style={{ width: `${scrollProgress}%` }}
+        ></div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

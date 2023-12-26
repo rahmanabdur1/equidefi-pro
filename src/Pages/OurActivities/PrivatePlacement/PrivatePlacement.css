@@ -1,0 +1,108 @@
+.private-placement{
+  margin-top: 120px;
+}
+
+
+.private-info {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  text-align: center;
+}
+
+.private-info h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+.private-info p {
+  color: whitesmoke;
+  font-family: sans-serif;
+  line-height: 23px;
+  word-spacing: 1px;
+  font-size: 14px;
+}
+
+
+.privateCarts {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+.privateCart {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  gap: 24px;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgb(250 230 156), rgb(250 200 200));
+}
+
+.logo1 img {
+  width: 35%;
+}
+
+.issuersdes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.issuersdes h4 {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.issuersdes p {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.professionaldes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo2 img {
+  width: 35%;
+}
+
+.professionaldes h4 {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.professionaldes p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 21px;
+}
+
+.investorsdes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo3 img {
+  width: 35%;
+}
+
+.investorsdes h4 {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.investorsdes p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 21px;
+}

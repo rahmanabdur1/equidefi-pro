@@ -1,0 +1,55 @@
+.investment-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 60px;
+}
+
+.investment-container h2 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.investment-container p {
+  font-family: sans-serif;
+  margin-top: 16px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.equiDeFi-engine {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+}
+.equiDeFi-des{
+ width: 77%;
+}
+
+.equidefi-img {
+  width: 23%;
+  
+}
+.equidefi-img img{
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+  
+  .equiDeFi-engine {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .equidefi-img{
+    width: 35%;
+    
+}
+ 
+}

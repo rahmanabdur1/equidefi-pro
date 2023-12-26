@@ -1,0 +1,21 @@
+.token-container{
+    background: linear-gradient(to right, rgb(39, 35, 67), rgb(39, 35, 67));
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.token-content{
+    max-width: 800px;
+    margin: auto;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    -webkit-box-shadow: 1px -1px 32px 17px rgba(0,0,0,0.83);
+    -moz-box-shadow: 1px -1px 32px 17px rgba(0,0,0,0.83);
+    box-shadow: 1px -1px 40px 17px #696969;
+    
+    
+    gap: 10px;
+    background: linear-gradient(90deg, rgba(88, 99, 160, 1) 0%, rgba(213, 79, 213, 1) 77%);
+}

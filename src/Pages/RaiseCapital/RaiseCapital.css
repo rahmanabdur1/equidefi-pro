@@ -1,0 +1,119 @@
+.raisecapital-info {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  gap: 10px;
+  font-family: sans-serif;
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-bottom: 100px;
+  background: linear-gradient(to right, rgb(39, 35, 67), rgb(39, 35, 67));
+}
+
+.raisecapital-lists {
+  background-color: #fff3e1;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 14px;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.raisecapital-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin: auto;
+}
+.triangle-down {
+  width: 0;
+  margin: auto;
+  height: 0;
+  border-radius: 12px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #555;
+}
+
+.private-placementss {
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 100px;
+  background: #272343;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 49% 100%, 0 98%, 0% 30%);
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 49% 100%, 0 98%, 0% 30%);
+}
+
+.private_placements-infos {
+  text-align: center;
+}
+
+.private_placements-infos h2 {
+  color: #e1e1e1;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.private_placements-infos p {
+  font-family: sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #cdd3d8;
+}
+.private_placement-in{
+  flex: 2;
+}
+.private-placementt {
+  font-family: sans-serif;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.private_placement-img {
+  flex: 1.5;
+}
+
+.private_placement-img img{
+  max-width: 100%;
+}
+
+@media screen and (max-width: 860px) {
+  .private-placementt {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .private-placementss {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .private-placementt {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+ 
+  .private-placementss {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    background: #272343;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 49% 100%, 0 98%, 0% 30%);
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 49% 100%, 0 98%, 0% 30%);
+  }
+}

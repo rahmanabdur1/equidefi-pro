@@ -1,13 +1,25 @@
 import React from 'react';
 import BgInfo from '../BgInfo/BgInfo';
-import PrivatePlacement from '../PrivatePlacement/PrivatePlacement';
+import OurActivities from '../OurActivities/OurActivities';
+import ClientReview from '../ClientReview/ClientReview';
+import EquiDeFiEducation from '../EquiDeFiEducation/EquiDeFiEducation';
+import ScheduleDemo from '../Schedule/ScheduleDemo/ScheduleDemo';
+import Partnerships from './Partnerships/Partnerships';
+import './Home.css'
+
 
 const Home = () => {
     return (
-        <div>
-            <BgInfo/>
-            <PrivatePlacement/>
-            
+        <div className='home'>
+        <div className='home-container'>
+        
+           <BgInfo/>
+            <OurActivities/>
+            <ClientReview/>
+            <EquiDeFiEducation/>
+            <Partnerships/>
+            <ScheduleDemo/>
+           </div>
         </div>
     );
 };
