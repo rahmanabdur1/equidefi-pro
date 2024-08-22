@@ -1,5 +1,5 @@
 import React from "react";
-import "./investor.css";
+import "./Investor.css";
 import { Link } from "react-router-dom";
 import img from "../../../assets/mobile.png";
 
