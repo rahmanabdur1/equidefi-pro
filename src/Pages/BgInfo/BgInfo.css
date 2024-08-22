@@ -108,6 +108,7 @@
   background-color: #ff86db;
   color: white;
   border: none;
+  right: 0;
   border-radius: 20% 0 0 20%;
   cursor: pointer;
   animation: slideInRight 0.5s ease-in-out forwards;
