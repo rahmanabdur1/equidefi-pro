@@ -9,7 +9,7 @@ import logo7 from "../../../assets/partnerships/irth.jpg";
 import logo8 from "../../../assets/partnerships/neetable.jpg";
 import logo9 from "../../../assets/partnerships/solulab.jpg";
 
-import "./partnerships.css";
+import "./Partnerships.css";
 const Partnerships = () => {
   return (
     <div className="containers">
